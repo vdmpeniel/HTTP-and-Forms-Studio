@@ -79,10 +79,10 @@
 			
 			const setSearchEngine = (event) => {
 				console.log('Handling submit event...');
-				const searchTerm = checkedEngine.getAttribute('value');				
-				
+								
 				const checkedEngine = document.querySelector('input[name="engine"]:checked');
-				event.target.setAttribute('action', );
+				const searchTerm = checkedEngine.getAttribute('value');
+				event.target.setAttribute('action', searchTerm);
 			};
 
 			const form = document.getElementById('searchForm');
@@ -97,6 +97,7 @@
 		<div class="search">
 			<div class="section">
 				<div class="imagotype id">
+
 					<img id="rocket" src="./images/LaunchCode_rocketline_white.png"/>
 				</div>
 				<div class="logotype id">
